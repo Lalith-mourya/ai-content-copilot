@@ -219,14 +219,3 @@ To launch the multi-container configuration:
 - **Async Task Queueing**: Migrating synchronous endpoints to asynchronous Celery/Redis tasks, returning a job ID to the frontend to poll for state completion.
 - **LoRA Fine-tuning**: Fine-tuning Qwen/Llama models on specific author scripts to automatically replicate publisher brand voices.
 
----
-
-## 📄 Resume-Worthy Project Details
-
-**AI Content Production Copilot (Lead AI Engineer)**
-* **Stack**: LangGraph, FastAPI, Streamlit, Groq (Llama-3), Edge-TTS, Pydantic, Docker.
-* **Orchestration**: Designed a stateful multi-agent system utilizing LangGraph to model editorial content workflows (Planner $\rightarrow$ Editor $\rightarrow$ Translator $\rightarrow$ Text-to-Speech), streamlining raw drafts into localized, narrated audiobooks.
-* **Engineering Achievements**:
-  - Implemented service decoupling using abstract base classes for hot-swappable TTS and translation engines.
-  - Mitigated translation/LLM context limits for book chapters by implementing paragraph-level chunking and batch synthesis.
-  - Packaged application using Docker-Compose to support scalable development and containerized service isolation.
