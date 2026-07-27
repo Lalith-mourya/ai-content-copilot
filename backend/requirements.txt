@@ -1,0 +1,12 @@
+fastapi>=0.100.0
+uvicorn>=0.22.0
+langgraph>=0.0.10
+langchain-core>=0.2.0
+langchain-groq>=0.1.0
+pydantic>=2.0
+pydantic-settings>=2.0
+deep-translator>=1.11.4
+edge-tts>=6.1.9
+python-multipart>=0.0.6
+httpx>=0.24.0
+gTTS>=2.3.2
