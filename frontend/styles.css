@@ -1,0 +1,122 @@
+/* Premium Glassmorphism and Dark Theme Styling for AI Content Copilot */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap');
+
+/* Main App Container Override */
+.stApp {
+    background-color: #08070e;
+    background-image: radial-gradient(circle at 10% 20%, rgba(90, 47, 203, 0.15) 0%, transparent 40%),
+                      radial-gradient(circle at 90% 80%, rgba(0, 206, 201, 0.1) 0%, transparent 40%);
+    color: #f1f2f6;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Titles and Headers */
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    background: linear-gradient(135deg, #a55eea, #00d2d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.5rem;
+}
+
+h2, h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: #d1d8e0;
+}
+
+/* Glassmorphism Cards */
+.css-1r6g72y, .stTabs, .element-container {
+    border-radius: 12px;
+}
+
+/* Custom styled card container for reports */
+.report-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Custom indicator pill for active agent status */
+.agent-pill {
+    background: linear-gradient(135deg, #6c5ce7, #a55eea);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85em;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(108, 92, 231, 0.3);
+}
+
+/* Style stream inputs & textareas */
+.stTextArea textarea {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+    color: #f1f2f6 !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease;
+}
+
+.stTextArea textarea:focus {
+    border-color: #a55eea !important;
+    box-shadow: 0 0 10px rgba(165, 94, 234, 0.25) !important;
+}
+
+/* Sidebar styling overrides */
+section[data-testid="stSidebar"] {
+    background-color: #0b0a12;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Style Streamlit Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: transparent;
+    gap: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 45px;
+    white-space: pre-wrap;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 8px 8px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #a5b1c2;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: rgba(165, 94, 234, 0.15) !important;
+    color: #ffffff !important;
+    border-bottom: 2px solid #a55eea !important;
+}
+
+/* Premium Action Buttons */
+.stButton button {
+    background: linear-gradient(135deg, #6c5ce7 0%, #a55eea 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    padding: 10px 24px !important;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.6) !important;
+}
+
+.stButton button:active {
+    transform: translateY(0px);
+}
